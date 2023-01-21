@@ -1,0 +1,506 @@
+@keyframes window {
+	0% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes turn {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	50% {
+		transform: rotateY(180deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+
+}
+
+@keyframes walk {
+	0% {
+		left: 10%;
+	}
+
+	50% {
+		left: 80%;
+		transform: rotateY(180deg);
+
+	}
+
+	100% {
+		left: 10%;
+
+	}
+}
+
+
+
+
+/*CONTENT CONTAINER*/
+
+.cont-container {
+	width: 100%;
+	position: relative;
+
+	cursor: default;
+
+}
+
+/*HEADER AND MORE BUTTON*/
+.cont-container > h2 {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: -1px -1px 0px black,
+				  1px  1px 0px black,
+				 -3px -3px 1px #924deb,
+				 -4px -4px 2px #572e8c;
+}
+
+.cont-container > .more {
+	position: absolute;
+	bottom: 3%;
+	right: 0;
+
+	padding: 15px 10px 15px 30px;
+	background: rgba(0, 0, 0, 0.5);
+
+	border: double white;
+	border-right: none;
+	border-width: 8px;
+	border-radius: 100px 0 0 0;
+	box-shadow: 0 0 5px 10px #512278;
+
+}
+
+.cont-container > .more > a {
+	font-size: 70px;
+	font-style: italic;
+	text-decoration: none;
+	color: #fff;
+		text-shadow: -1px -1px 0px black,
+				  1px  1px 0px black,
+				 -3px -3px 1px #924deb,
+				 -4px -4px 2px #572e8c;
+}
+
+
+/*CONTENT BLOCKS*/
+
+.cont-container > .content-field {
+	width: 100%;
+	padding:130px 0 140px ;
+
+	display: flex;
+	overflow: auto;
+	flex-wrap: wrap;
+    justify-content: space-around;
+
+
+
+}
+
+.cont-container > .content-field > .cont-block {
+	position: relative;
+	display: inline-block;
+	column-gap: 30px;
+	cursor: pointer;
+
+
+	height: 400px;
+	width: 300px;
+	max-width: 300px;
+	min-width: 300px;
+	margin: 20px;
+
+	border-top: groove white;
+	border-left: groove white;
+	border-right: ridge white;
+	border-bottom: ridge white;
+	border-width: 5px;
+
+	box-shadow: 0px 0px 10px 5px #7332a8,
+				5px 5px 10px 5px black;
+
+	background: url(../img/cont-block-back.jpg) no-repeat top;
+	background-size: 200% 100%;
+
+}
+
+.cont-container > .content-field > .cont-block > .cont-img {
+	display: flex;	
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.cont-container > .content-field > .cont-block > .cont-img > img {
+	width: 55%;
+	height: 165px;
+/*	height: auto;*/
+	margin: 30px 50px 10px;
+	box-sizing: border-box;
+
+	border: double white;
+	border-radius: 500px;
+	border-width: 8px;
+	box-shadow: 0px 0px 5px 10px #512278;
+
+}
+
+
+.cont-container > .content-field > .cont-block > .cont-header {
+	display: flex;
+	justify-content: center;
+
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: -1px -1px 0px black,
+				  1px  1px 0px black,
+				 -3px -3px 1px #924deb,
+				 -4px -4px 2px #572e8c;
+
+
+}
+
+.cont-container > .content-field > .cont-block > .cont-text {
+	text-align: center;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 18px;
+	
+} 
+
+
+/*NEWS WINDOW*/
+
+div.window {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 10;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: none;
+/*	pointer-events: none;*/
+	cursor: default;
+
+	animation: window;
+	animation-duration: 0.8s;
+}
+
+div.window.show {
+	display: block;
+}
+
+div.window > .cont-window {
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 10%;
+	bottom: 10%;
+
+	background: rgba(0, 0, 0, 0.8);
+	border-top: groove;
+	border-bottom: groove;
+}
+
+
+/*NEWS BACKGROUND PLACE*/
+div.window > .cont-window:before {
+	content: '';
+	height: 100%;
+	width: 27%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	clip-path: polygon(0% 0%,
+                   100% 0%,
+                   50% 100%,
+                    0% 100%);
+}
+
+/*BACKGROUNDS*/
+div.window > .goty:before {
+	background: url(../img/goty.png) center center;
+	background-size: cover;
+} 
+
+div.window > .guide:before {
+	background: url(../img/guides.jpg) no-repeat center center;
+	background-size: cover;
+/*	background-position-x: -400px ;*/
+} 
+
+div.window > .tour:before {
+	background: url(../img/tournament.jpg) center;
+	background-size: cover;
+} 
+
+div.window > .neco:before {
+	background: url(../img/goty.png);
+} 
+
+div.window > .twitt:before {
+	background: url(../img/twitter.jpg) -150px center ;
+	background-size: cover;
+} 
+
+
+
+/*NEWS WINDOW CONTENT*/
+
+div.window > .cont-window > .window-info {
+	display: flex;
+    flex-direction: column;
+	color: white;
+	margin-left: 25%;
+/*	background: grey;*/
+	height: 100%;
+}
+
+div.window > .cont-window > .window-info > h2 {
+	width: 100%;
+
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+	text-shadow: -1px -1px 0px black,
+				  1px  1px 0px black,
+				 -3px -3px 1px #924deb,
+				 -4px -4px 2px #572e8c;
+}
+
+div.window > .cont-window > .window-info > p {
+	margin: 0 30px;
+	font-size: 20px;
+	text-align: center;
+	overflow: auto;
+	height: 100%;
+	line-height: 35px;
+}
+
+/*WINDOW RETURN BUTTON*/
+div.window > .exit-button {
+	position: absolute;
+	top: 5%;
+	right: 1%;
+	transform: translateY(-50%);
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+	height: 50px;
+	width: 50px;
+	border-radius: 200px;
+
+	border: double white;
+	box-shadow: 0 0 5px 5px #512278;
+	cursor: pointer;
+}
+
+
+div.window > .exit-button > i.fa-chevron-right {
+/*	height: 100%;*/
+/*	width: 100%;*/
+	color: #fff;
+	font-size: 30px;
+	position: relative;
+	top: 3%;
+	left: 3%;
+}
+
+
+div.window > .exit-button:hover {
+	background: rgba(255, 255, 255, 0.2);
+/*	border-color: black;*/
+}
+
+div.window > .exit-button:hover > i.fa-chevron-right {
+/*	color: black;*/
+	pointer-events: none;
+}
+
+
+
+
+
+
+/*TOURNAMENTS LIST*/
+div.window > .cont-window.tour > .window-info > p {
+	height: unset;
+/*	padding-bottom: 20px;*/
+	overflow: unset;
+	line-height: 25px;	
+} 
+
+
+div.window > .cont-window.tour > .window-info > p:after {
+	content: '';
+	display: block;
+	border-bottom: solid;
+	width: 30%;
+	margin: 20px auto;
+}
+
+
+.window-info  div.list {
+/*	background: red;*/
+	width: 100%;
+	height: 100%;
+	display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.window-info  div.list > ul {
+	margin: 20px 0;
+	width: 50%;
+/*	flex-grow: 10;*/
+}
+
+.window-info  div.list > ul > li[month] {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 20px;
+	text-shadow: -1px -1px 0px black,
+				  1px  1px 0px black,
+				 -3px -3px 1px #924deb,
+				 -4px -4px 2px #572e8c;
+}
+
+.window-info  div.list > ul > li {
+	padding: 5px;
+	position: relative;
+}
+
+/*NECO*/
+
+.window.neco > .cont-window  {
+	border: none;
+	top: 0;
+	bottom: 0;
+}
+
+.window.neco > .cont-window  > .neco {
+	height: 200px;
+	width: 200px;
+	background: url(../img/neko.gif);
+	background-size: 100% 100%;
+}
+
+.window.neco > .cont-window  > .neco.n1 {
+	position: absolute;
+	height: 100%;
+	width: 33%;
+	bottom: 0;
+	top: 0;
+	opacity: 30%;
+}
+
+.window.neco > .cont-window  > .neco.n2 {
+	position: absolute;
+	height: 100%;
+	width: 33%;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	opacity: 30%;
+}
+
+
+.window.neco > .cont-window  > .neco.n3 {
+	position: absolute;
+	height: 100%;
+	width: 33%;
+	bottom: 0;
+	top: 0;
+	left: 33%;
+	transform: rotate(180deg);
+	opacity: 30%;
+}
+
+.window.neco > .cont-window  > .neco.n4 {
+	position: absolute;
+
+	animation: turn;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1, end);
+}
+
+.window.neco > .cont-window  > .neco.n5 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	animation: turn;
+	animation-duration: 1.2s;
+	animation-direction: reverse;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1, end);
+}
+
+.window.neco > .cont-window  > .neco.n6 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	animation: turn;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1, end);
+}
+
+.window.neco > .cont-window  > .neco.n7 {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	animation: turn;
+	animation-duration: 1.2s;
+	animation-direction: reverse;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1, end);
+}
+
+.window.neco > .cont-window  > .neco.n8 {
+	position: absolute;
+	left: 10%;
+	bottom: 0;
+	width: 100px;
+	height: 100px;
+
+	animation: walk;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+
+.window.neco > .cont-window  > .neco.n9 {
+	position: absolute;
+	left: 10%;
+	top: 0;
+	width: 100px;
+	height: 100px;
+
+	animation: walk;
+
+/*	animation-direction: reverse;*/
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}

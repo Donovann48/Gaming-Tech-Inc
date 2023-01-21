@@ -1,0 +1,33 @@
+@import url('font-awesome.css');
+
+/* latin */
+/*
+FONT:  Fredoka One
+font-family: 'Comfortaa', cursive;
+*/
+/*@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');*/
+@font-face {
+    font-family: 'Comfortaa Test';
+    font-style: normal;
+    font-weight: 400;
+    src:  url('../fonts/comfortaa/comfortaa_regular.woff2') format('woff2');
+}
+
+/*FONT:  Fredoka One*/
+@font-face {
+    font-family: 'Fredoka One';
+/*  font-style: normal;
+    font-weight: 400;
+    font-display: swap;*/
+    src: url('../fonts/fredokaone/fredokaone_regular.woff2') format('woff2');
+    /*unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;*/
+}
+
+/*FONT:  Audiowide*/
+@font-face {
+    font-family: 'audiowideregular';
+    src: url('../fonts/audiowide/audiowide-regular-webfont.woff2') format('woff2'),
+         url('../fonts/audiowide/audiowide-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

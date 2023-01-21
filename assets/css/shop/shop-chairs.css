@@ -1,0 +1,7 @@
+/*Item Box Content*/
+
+.shop-items.chairs > .item-box > .item-img {
+	background: url(../../img/shop/chairs.jpg) center center no-repeat;
+	background-size: 100% 100%;
+}
+

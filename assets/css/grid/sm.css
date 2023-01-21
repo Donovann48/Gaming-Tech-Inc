@@ -1,0 +1,308 @@
+/*Small Devices*/
+
+@media only screen and (max-width: 768px) {
+
+
+/*	HOME PAGE*/
+
+
+	.nav {
+/*		font-size: 0.8em;*/
+
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+/*		padding: 0;*/
+		width: 100%;
+	}
+
+	nav > ul {
+		width: 100%;
+	}
+
+
+	.header {
+		height: 50px;
+	}
+
+	.header > div.logo {
+		height: 150%;
+	}
+
+	.header > div.logo > a {
+		display: flex;
+		justify-content: center;
+	}
+
+	.header > div.logo > a > h2 {
+		width: 9.5em;
+	}	
+
+	.header > div.logo > a > img {
+		height: 100%;
+		padding: 5px;
+	}
+
+/*	SEARCH BAR*/
+
+	div.search {
+		right: 0;
+	}
+
+	.search_bar {
+/*		height: 80px;*/
+		margin-top: 90px;
+		height: 40%;
+		width: 100%;
+	}
+
+	.search_bar > form {
+/*		height: 100%;*/
+		width: auto;
+	}
+
+	.search_bar > form > input {
+		height: 30px;
+		width: 90vw;
+	}
+
+	.search_bar > form > button {
+		width: 10%;
+/*		max-width: 6vw;*/
+		min-width: 30px;
+	}
+
+/*	CAROUSEL*/
+
+	.carousel {
+		height: 500px;
+	}
+
+	.carousel > .shell {
+		transform: translateY(100px);
+		height: 400px;
+	}
+
+	.carousel > .shell > h2 {
+		top: 15%;
+		font-size: 30px;
+	}
+
+	.carousel > .shell > p {
+		min-width: 100%;
+		font-size: 16px;
+/*		padding: 10px 20px;*/
+		bottom: 15%;
+	}
+
+	.cont-container > .more > a {
+		font-size: 50px;
+	}
+
+
+/*	NEWS WINDOWS*/
+
+	div.window > .cont-window:before {
+		height: 15%;
+		width: 35%;
+		clip-path: polygon(0% 0%,
+	                   100% 0%,
+	                   80% 100%,
+	                    0% 100%);
+	}	
+
+	div.window > .cont-window > .window-info {
+		margin: unset;
+	}
+
+	div.window > .cont-window > .window-info > h2 {
+		margin-left: 35%;
+		width: 60%;
+	}
+
+	div.window > .cont-window > .window-info > p {
+		margin-top: 20px;
+	}
+
+
+	div.window > .guide:before {
+	background: url(../../img/guides.jpg) no-repeat;
+	background-size: 100%;
+	background-position: 100% 25%;
+	} 
+
+	div.window > .twitt:before {
+	background: url(../../img/twitter.jpg) no-repeat;
+	background-size: cover;
+	background-position: 10% 10%;
+	} 
+
+	div.window > .cont-window.tour > .window-info > p {
+	line-height: 20px;	
+	height: 60%;
+	overflow: auto;
+	font-size: 15px;
+	margin-top: 30px;
+	} 
+
+	.window-info  div.list {
+		flex-direction: column;
+	}
+
+	.window-info  div.list > ul {
+		overflow: auto;
+		font-size: 14px;
+		border-right: solid;
+		border-left: solid;
+		height: 100%;
+	}
+
+
+
+
+
+
+/*	GAMES PAGE*/
+
+	.games-header {
+		display: inline-block;
+		text-align: center;
+		margin: 50px 0 20px;
+		width: 100%;
+		font-size: 50px;
+	}
+
+	section.games {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+    	justify-content: space-around;
+		column-gap: 33px;
+		height: 45em;
+	}
+
+	section.categories > .category-select > ul > li > a {
+		display: flex;
+		height: 100%;
+		padding: 0;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	label.container {
+/*		height: 50em;*/
+	}
+
+	label.container > span {
+/*		position: relative;*/
+		right: 4%;
+		left: 4%;
+		top: 35%;
+		bottom: 4%;
+	}
+
+	label.container {
+		flex-grow: 5;
+	}
+
+
+	label.container > span > .game-window > .game-info > h2 {
+		font-size: 50px;
+	}
+
+	label.container > span > .game-window > .game-info > .game-text > p {
+		font-size: 24px;
+	}
+
+
+
+	/* Shop page */
+
+	section.shop {
+		display: inline-flex;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	section.shop > .items-cat > .categories {
+		position: unset;
+	}
+
+	section.shop > .items-cat {
+		width: 100%;
+	}
+
+	section.shop > .shop-items-layout {
+		width: 100%;
+	}
+
+	.shop-items-layout > .shop-container > .shop-items {
+		column-gap: unset;
+		padding: unset;
+	}
+
+
+
+
+
+
+
+	.hide-sm {
+		display: none;
+	}
+
+	.visible-sm {
+		display: block;
+	}
+
+	.col-sm-1 {
+		width: 8.333333%;
+	}
+
+	.col-sm-2 {
+		width: 16.666666%;
+	}
+
+	.col-sm-3 {
+		width: 24.999999%;
+	}
+
+	.col-sm-4 {
+		width: 33.333333%;
+	}
+
+	.col-sm-5 {
+		width: 41.666666%;
+	}
+
+	.col-sm-6 {
+		width: 50%;
+	}
+
+	.col-sm-7 {
+		width: 58.333333%;
+	}
+
+	.col-sm-8 {
+		width: 66.666666%;
+	}
+
+	.col-sm-9 {
+		width: 74.999999%;
+	}
+
+	.col-sm-10 {
+		width: 83.333333%;
+	}
+
+	.col-sm-11 {
+		width: 91.666666%;
+	}
+
+	.col-sm-12 {
+		width: 100%
+	}
+}

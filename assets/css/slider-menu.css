@@ -1,0 +1,266 @@
+/* Main Slider */
+.tns-outer {
+	position: relative;
+	text-align: center;
+	/* margin: 50px 0; */
+}
+
+.tns-outer div.item {
+	position: relative;
+	min-height: 800px;
+	text-align: left;	
+}
+
+.tns-outer::after {
+	display: inline-block;
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+
+	background: url(../img/slider-2.png) center center;
+	background-size: 100% 100%;
+
+	z-index: 4;
+}
+
+
+
+
+/* Items in the slider */
+
+/* General */
+.carousel div.item > .description {
+	height: 100%;
+	width: 40%;
+
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	
+	display: flex;
+    align-items: center;
+	
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	
+	/* pointer-events: none; */
+	
+	letter-spacing: 3px;
+	line-height: 20px;
+	
+	padding: 0 40px;
+	
+	border-right: groove 2px;
+	border-left: groove 2px;
+
+	opacity: 0;
+
+	visibility: hidden;
+}
+
+
+/* Description */
+.carousel div.item > .description > .text-box {
+	height: 80%;
+
+	padding-top: 130px;
+	overflow: auto;
+
+	opacity: 0;
+	transition: 0s;
+	/* transition-delay: 1s; */
+
+	visibility: hidden;
+
+
+}
+
+.carousel div.item > .description > .text-box > .text {
+	
+}
+
+.carousel div.item.tns-slide-active > .description {
+	opacity: 100;
+	visibility: visible;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+
+.carousel div.item.tns-slide-active > .description .text-box {
+	opacity: 100;
+	visibility: visible;
+	transition: 1.5s;
+	transition-delay: 1s;
+
+}
+
+
+/* More button */
+.carousel div.item > .more {
+	position: absolute;
+	bottom: 10%;
+	right: 0;
+
+	padding: 50px 60px;
+	min-width: 200px;
+	
+	background: url(../img/more-button.png);
+	background-size: 100% 100%;
+	
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+	font-style: italic;
+	text-align: center;
+	
+	opacity: 0;
+	visibility: hidden;
+	/* transition-delay: 1s; */
+	
+	text-shadow: -2px -2px 1px #924deb,
+	-3px -3px 2px #572e8c;
+}
+
+
+
+.carousel div.item.tns-slide-active > .more {
+	opacity: 100;
+	visibility: visible;
+	transition: 1.5s;
+	transition-delay: 1.5s;
+	right: 5%;
+}
+
+
+
+/* Games */
+.carousel div.item.games {
+	background: url(../img/slider-games.jpg) center top;
+}
+
+/* Shop */
+.carousel div.item.two {
+	background: url(../img/slider-shop.jpg) center bottom;
+	background-size: cover;
+}
+
+/* Tournament */
+.carousel div.item.three {
+	background: url(../img/slider-tournament.jpg) center bottom;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+/* Stop autoplay button */
+.tns-outer [data-action] {
+	display: none;
+}
+
+
+
+
+.tns-outer > .tns-controls button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+	margin: auto;
+
+	width: 80px;
+	height: 80px;
+
+	font-size: 70px;
+	padding: 0;
+
+	background: transparent;
+	border: none;
+	outline: none;
+
+	color: #fff;
+
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.tns-outer > .tns-controls button:first-child {
+	margin-left: 0;
+	text-align: left;
+}
+
+.tns-outer > .tns-controls button:last-child {
+	margin-right: 0;
+	text-align: right;
+}
+
+.tns-outer:hover > .tns-controls button:first-child {
+	margin-left: 20px;
+	opacity: unset;
+
+}
+
+.tns-outer:hover > .tns-controls button:last-child {
+	margin-right: 20px;
+	opacity: unset;
+}
+
+
+
+.tns-outer .tns-controls > button > i {
+
+}
+
+.tns-outer .tns-nav {
+	display: inline-block;
+	position: relative;
+	top: -30px;
+	opacity: 0;
+	transition: 0.5s;
+	/* padding: 0 20px; */
+	/* background-color: #fff; */
+	/* border-bottom: solid white; */
+
+}
+
+.tns-outer:hover .tns-nav {
+	top: -40px;
+	opacity: 100%;
+	/* border-radius: 20px; */
+}
+
+
+.tns-outer .tns-nav > button {
+	margin: 5px;
+	width: 60px;
+	height: 8px;
+	background: rgba(255, 255, 255, 0.25);
+	clip-path: polygon(10% 0%,
+						100% 0%,
+						90% 100%,
+						0% 100%);
+	outline: none;
+	border: none;
+	transition: 0.5s;
+}
+
+.tns-outer .tns-nav > button.tns-nav-active {
+	background: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+

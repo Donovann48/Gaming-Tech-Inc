@@ -1,0 +1,181 @@
+/*HEADER*/
+
+.header {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 5em;
+
+
+}
+
+.header > div[class^=col-] {
+	height: 5em;
+/*	position: relative;*/
+}
+
+.header > div.logo {
+	height: 100%;
+}
+
+.header > div.logo > a {
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+	text-decoration: none;
+}
+
+.header > div.logo > a > h2 {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	float: left;
+	width: 5em;
+
+	text-shadow: -2px -2px 1px #924deb,
+				 -3px -3px 2px #572e8c;
+	color: #fff;
+	font-size: 1.5em;
+
+}
+
+.header > div.logo > a > img {
+	height: 100%;
+	display: inline-block;
+	padding: 15px 0;
+	box-sizing: border-box;
+	transition: 1s;
+}
+
+.header > div.logo > a:hover > img {
+	transform: rotate(180deg);
+	padding: 0;
+}
+
+
+/*NAVIGATION*/
+
+.nav {
+	height: 100%;
+}
+
+nav {
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 20px;
+
+}
+
+nav > ul {
+	height: 100%;
+	display: table;
+	box-sizing: border-box;
+}
+
+nav > ul > li {
+	float: left;
+	height: 100%;
+}
+
+nav > ul > li.active > span,
+nav > ul > li > a {
+	height: 100%;
+	box-sizing: border-box;
+	display: table;
+
+	padding: 15px;
+	text-decoration: none;
+	color: #fff;
+
+}
+
+nav > ul > li > a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav > ul > li > span > span,
+nav > ul > li > a > span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+nav > ul > li.active > span {
+	background-color: #fff;
+	color: #572e8c;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/*NAVIGATION ICONS*/ 
+
+nav > ul > li > a i.fa-menu {
+	font-size: 0.8em;
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+	transition: 0.5s;
+}	
+
+nav > ul > li > a:hover i.fa-menu {
+	font-size: 1.5em;
+}
+
+/*SEARCH BAR*/
+
+.search_bar {
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+/*	box-shadow: 0px 0px 5px 5px white;*/
+/*	background-color: red;*/
+/*	border-radius: 0 0 0 200px;*/
+	
+}
+
+
+
+.search_bar > form {
+	position: relative;
+	margin: auto;
+}
+
+.search_bar > form > input {
+	box-sizing: border-box;
+/*	position: relative;*/
+	max-width: 495px;
+
+	outline: none;
+	height: 1.5em;
+	border: solid #4c1678;
+	border-radius: 5px;
+	font-family: 'audiowideregular';
+}
+
+.search_bar > form > input:focus { 
+/*	color: #fff;*/
+	background-color: rgba(255, 255, 255, 1.0);
+	box-shadow: 5px 5px 5px black;
+}
+
+
+.search_bar > form > button {
+	position: absolute;
+	height: 100%;
+	width: 30px;
+	right: 0;
+/*	bottom: 0;*/
+/*	outline: none;*/
+
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	background-color: #4c1678;
+}
+
+
+
+
+

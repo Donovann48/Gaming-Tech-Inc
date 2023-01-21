@@ -1,0 +1,7 @@
+/*Item Box Content*/
+
+.shop-items.mice > .item-box > .item-img {
+	background: url(../../img/shop/mice.jpg) center center;
+	background-size: 100%;
+}
+

@@ -1,0 +1,222 @@
+/*Extra Small Devices*/
+
+@media only screen and (max-width: 500px) {
+
+	.nav {
+		font-size: 0.8em;
+
+	}
+
+	nav {
+/*		display: flex;*/
+/*		justify-content: center;*/
+/*		padding: 0;*/
+	}
+
+	nav > ul {
+/*		display: flex;*/
+/*		overflow: auto;*/
+/*		justify-content: flex-start;*/
+	}
+
+
+	.header {
+		height: 50px;
+	}
+
+	.header > div.logo > a {
+		display: flex;
+		justify-content: flex-start;
+		margin-left: 20px;
+		margin-top: 5px;
+	}
+
+	.header > div.logo > a > h2 {
+		width: 5em;
+	}	
+
+	.header > div.logo > a > img {
+		height: 100%;
+		padding: 5px;
+	}
+
+/*	SEARCH BAR*/
+	.search_bar {
+/*		height: 80px;*/
+/*		height: 80%;*/
+/*		width: 100%;*/
+	}
+
+	.search_bar > form {
+/*		height: 100%;*/
+/*		margin-top: 90px;*/
+	}
+
+	.search_bar > form > input {
+/*		height: 100%;*/
+/*		width: 90vw;*/
+	}
+
+	.search_bar > form > button {
+/*		width: 10vw;*/
+/*		max-width: 6vw;*/
+		min-width: 20px;
+	}
+
+/*	CAROUSEL*/
+	
+	.carousel {
+		height: 570px;
+	}
+
+	.carousel > .shell {
+/*		transform: translateY(270px);*/
+		height: 450px;
+	}
+
+	.carousel > .shell > h2 {
+		top: 8%;
+		font-size: 25px;
+	}
+
+	.carousel > .shell > p {
+		min-width: 100%;
+		font-size: 15px;
+/*		padding: 10px 20px;*/
+		top: 32%;
+		bottom: unset;
+	}
+
+/*	NEWS PANEL */
+	.cont-container {
+		background: url('../../img/back-ai.jpg') repeat top -650px center ;
+		background-size: max(2000px, 1000px);
+	}
+	
+
+	.cont-container > .more {
+/*		bottom: 8%;*/
+	}
+
+	/*GAMES PAGE	*/
+
+
+	section.categories {
+		font-size: 15px;
+	}
+
+	section.categories > .category-select > ul > li.cat-active {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	.games-header {
+		font-size: 35px;
+
+	}
+
+	section.games {
+		height: 84em;
+		margin: 0;
+	}
+
+	label.container {
+		margin: 20px 10px 20px 0;
+		font-size: 15px;
+/*		padding: 20px 100px;*/
+		width: 100%;
+
+	} 
+
+	label.container > span > .game-window > .game-info > h2 {
+		font-size: 30px;
+	}
+
+
+
+
+
+
+/*    FOOTER*/
+	footer {
+
+		height: 150px;
+
+	}
+
+	footer > div.footer-links {
+		height: 100%;
+	}
+
+	footer > div.footer-links > ul {
+		top: 0;
+		height: 90%;
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    flex-direction: row;
+	}
+
+
+
+
+
+	.hide-xs {
+		display: none;
+	}
+
+	.visible-xs {
+		display: block;
+	}
+
+	.col-xs-1 {
+		width: 8.333333%;
+	}
+
+	.col-xs-2 {
+		width: 16.666666%;
+	}
+
+	.col-xs-3 {
+		width: 24.999999%;
+	}
+
+	.col-xs-4 {
+		width: 33.333333%;
+	}
+
+	.col-xs-5 {
+		width: 41.666666%;
+	}
+
+	.col-xs-6 {
+		width: 50%;
+	}
+
+	.col-xs-7 {
+		width: 58.333333%;
+	}
+
+	.col-xs-8 {
+		width: 66.666666%;
+	}
+
+	.col-xs-9 {
+		width: 74.999999%;
+	}
+
+	.col-xs-10 {
+		width: 83.333333%;
+	}
+
+	.col-xs-11 {
+		width: 91.666666%;
+	}
+
+	.col-xs-12 {
+		width: 100%
+	}
+}

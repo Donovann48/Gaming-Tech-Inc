@@ -1,0 +1,376 @@
+	@keyframes checked {
+	0% {
+		box-shadow: 0px 0px 5px 10px #572e8c;
+
+	}
+
+	50% {
+		box-shadow: 0px 0px 5px 20px #572e8c;
+
+	}
+
+	100%{
+		box-shadow: 0px 0px 5px 30px #572e8c;
+
+	}
+
+
+}
+
+@keyframes popup {
+	0% {
+		opacity: 0;
+		bottom: 90%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+
+
+
+
+body {
+	font-size: 16px;
+	font-family: 'audiowideregular';
+	background: url('../img/back-ai.jpg') repeat top -93px center ;
+	background-size: max(2000px, 1000px);
+}
+
+/*HOME PAGE*/
+ 
+.carousel {
+	height: 100%;
+	cursor: default;
+}
+
+.carousel > .shell {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	box-sizing: border-box;
+
+	background-color: rgba(0, 0, 0, 0.5);
+	border-top: solid #572e8c;
+	border-bottom: solid #572e8c;
+	border-width: 2px;
+}
+
+.carousel > .shell > h2 {
+	position: absolute;
+	top: 15%;
+	font-size: 50px;
+
+	text-transform: capitalize;
+	text-align: center;
+
+	color: #fff;
+	text-shadow: -1px -1px 0px black,
+				  1px  1px 0px black,
+				 -3px -3px 1px #924deb,
+				 -4px -4px 2px #572e8c;
+}
+
+.carousel > .shell > h2:after {
+	content:"\00AE";
+	vertical-align: super;
+	font-size: 30px;
+}
+
+.carousel > .shell > p {
+	width: 80%;
+	min-width: 700px;
+	position: absolute;
+	bottom: 10%;
+	right: 50%;
+	transform: translateX(50%);
+
+	color: #fff;
+	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+	letter-spacing: 1px;
+
+	padding: 20px 30px;
+	border-radius: 100px 20px 100px 20px;
+	border: 7px double white;
+	box-shadow: 0px 0px 5px 5px #7802c4;
+}
+
+
+/*GAMES PAGE*/
+
+
+/*HEADER*/
+
+.games-header {
+	display: flex;
+	justify-content: center;
+	margin: 80px 0 60px;
+	font-size: 50px;
+	color: #fff;
+	text-shadow: -1px -1px 0px black,
+				  1px  1px 0px black,
+				 -3px -3px 1px #924deb,
+				 -4px -4px 2px #572e8c;
+	cursor: default;
+}
+
+/*CATEGORIES*/
+
+section.categories {
+	display: inline-block;
+	width: 100%;
+}
+
+section.categories > .category-select {
+
+}
+
+section.categories > .category-select > ul {
+	display: flex;
+	justify-content: space-around;
+	border-top: solid #572e8c;
+	border-bottom: solid #572e8c;
+}
+
+section.categories > .category-select > ul > li {
+	width: 100%;
+
+}
+
+section.categories > .category-select > ul > li > a {
+	display: inline-block;
+	width: 100%;
+
+	padding: 10px 0;
+	text-decoration: none;
+
+	color: #fff;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.categories > .category-select > ul > li > a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+} 
+
+
+section.categories > .category-select > ul > li.cat-active {
+	width: 100%;
+	padding: 10px;
+	color: white;
+
+	text-align: center;
+	background-color: #572e8c;
+}
+
+
+
+
+
+/*MENU-BUTTONS*/
+
+label.container span,
+label.container > input {
+	display: none;
+
+
+}
+
+section.games {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: relative;
+/*    background-color: rgba(0, 0, 0, 0.5);*/
+    border-top: solid white;
+    border-bottom: solid white;
+
+    padding: 50px 0;
+    margin-bottom: 50px;
+
+}
+
+label.container {
+/*	display: flex;*/
+	justify-content: center;
+	width: 20%;
+	max-width: 350px;
+	margin: 40px 5%;
+	padding: 20px 0px;
+	text-align: center;
+	transition: 0.5s;
+
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+
+
+	border: double;
+	border-radius: 50px 20px;
+	box-shadow: 0px 0px 5px 10px #572e8c;
+}
+
+
+label.container:has(input:checked) {
+	font-size: 32px;
+	padding: 18px;
+	background-color: #3c1161;
+}
+
+
+label.container > input:checked + span {	
+	display: block;
+}
+
+/*GAME WINDOW*/
+
+label.container > span {
+	position: absolute;
+	right: 5%;
+	left: 35%;
+	top: 4%;
+	bottom: 4%;
+
+
+	border-radius: 50px;
+	cursor: default;
+
+	animation: popup;
+	animation-duration: 1s;
+
+}
+
+label.container > span > .game-window {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: solid;
+	border-width: 5px;
+	border-radius: 50px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+label.container > span > .game-window > .game-info {
+	height: 100%;
+	flex-direction: column;
+    display: flex;
+}
+
+
+label.container > span > .game-window > .game-info > h2 {
+	text-align: center;
+	padding: 10px;
+	border-bottom: solid;
+	font-size: 60px;
+
+	text-shadow: -1px -1px 0px black,
+				  1px  1px 0px black,
+				 -3px -3px 1px #924deb,
+				 -4px -4px 2px #572e8c;
+}
+
+label.container > span > .game-window > .game-info > .game-text {
+/*	height: 90%;*/
+	display: flex;
+	justify-content: center;
+	padding-top: 50px ;
+	overflow: auto;
+}
+
+label.container > span > .game-window > .game-info > .game-text > p {
+	height: 60%;
+	width: 80%;
+	text-align: center;
+
+}
+ 
+/*BACKGROUNDS */
+section.games:has(input#mgr:checked) {
+	background: url('../img/mgr.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#na:checked) {
+	background: url('../img/na.jpg') top center;
+	background-size: cover;
+
+}
+
+section.games:has(input#doom:checked) {
+	background: url('../img/doom.jpg') top center;
+	background-size: cover;
+
+
+}
+
+section.games:has(input#dmc:checked) {
+	background: url('../img/dmc.jpg') top center;
+	background-size: cover;
+
+}
+
+section.games:has(input#gg:checked) {
+	background: url('../img/gg.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#mvc:checked) {
+	background: url('../img/mvc.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#bb:checked) {
+	background: url('../img/bb.jpg') top center;
+	background-size: cover;
+}
+
+
+section.games:has(input#ki:checked) {
+	background: url('../img/ki.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#hzd:checked) {
+	background: url('../img/hzd.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#tr:checked) {
+	background: url('../img/tr.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#sm:checked) {
+	background: url('../img/sm.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#bat:checked) {
+	background: url('../img/bat.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#val:checked) {
+	background: url('../img/val.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#mh:checked) {
+	background: url('../img/mh.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#diablo:checked) {
+	background: url('../img/diablo.jpg') top center;
+	background-size: cover;
+}
+
+section.games:has(input#wf:checked) {
+	background: url('../img/wf.jpg') top center;
+	background-size: cover;
+}
