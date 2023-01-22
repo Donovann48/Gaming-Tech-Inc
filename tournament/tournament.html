@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GamingTech Inc. | Mice</title>
+
+		<!-- Favicons -->
+
+		<link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../assets/img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- CSS Styles -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="../assets/js/nav-button.js"></script>
+		<script type="text/javascript" src="../assets/js/tournament-form.js"></script>
+	</head>
+	<body>
+		<section class="header">
+			<div class="col-lg-2 col-md-3 col-sm-12 logo">
+				<a href="home.html">
+					<h2>Gaming Tech Inc.</h2>
+					<img src="../assets/img/logo.png">
+				</a>
+			</div>
+			<div class="col-lg-7 col-sm-12 nav">
+				<nav js-nav>
+					<ul>				
+						<li>
+							<a href="../home.html">
+								<span>
+									<i class="fa fa-home fa-menu" aria-hidden="true"></i>Home
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="../game-categories/action-games.html">
+								<span>
+									<i class="fa fa-gamepad fa-menu" aria-hidden="true"></i>Games
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="../shop/shop-keyboards.html">
+								<span>
+									<i class="fa fa-shopping-cart fa-menu" aria-hidden="true"></i>Shop</span>
+							</a>
+						</li>
+                        <li class="active">
+							<span><span>
+								<i class="fa fa-trophy fa-menu" aria-hidden="true"></i>Tournaments
+							</span></span>
+						</li>
+						<li>
+							<a href="/">
+								<span>
+									<i class="fa fa-question fa-menu" aria-hidden="true"></i>Q&As
+								</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-lg-3 col-sm-12 visible-sm col-xs-12 visible-xs search">
+				<div class="search_bar">
+					<form action="/" method="get">
+						<input type="text" name="search_bar" placeholder="Search...">
+							<button type="submit" name submit>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="nav-button"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		</section>
+
+        <section class="sign-in">
+            
+            <form action="/" method="post" id="tournament">
+                <label for="firstName">Name:
+                    <input type="text" name="firstName" id="firstName">
+                </label>
+                <label for="lastName">Last Name:
+                    <input type="text" name="lastName" id="lastName">
+                </label>
+                <label for="email">Email:
+                    <input type="email" name="email" id="email">
+                </label>
+                <label for="age">Age:
+                    <input type="text" name="age" id="age">
+                </label>
+                <label for="game">Game:
+                    <select name="game" id="game">
+                        <option value="" selected>--Choose a game--</option>
+                        <option value="Val">Valorant</option>
+                        <option value="League Of Legends">League Of Legends</option>
+                        <option value="Dota 2">Dota 2</option>
+                        <option value="CS:GO">CS:GO</option>
+                    </select>
+                </label>
+                <button type="submit">Sign</button>
+            </form>
+            <div id="result"></div>
+        </section>
+		
+
+		<footer>
+			<div class="footer-links">
+				<ul>
+					<li><a href="/"><span>Write For Us</span></a></li>
+					<li><a href="/"><span>Home</span></a></li>
+					<li><a href="/"><span>Contact Us</span></a></li>
+					<li><a href="/"><span>Privacy</span></a></li>
+					<li><a href="/"><span>Copyright</span></a></li>
+					<li><a href="/"><span>About Us</span></a></li>
+					<li><a href="/"><span>Press Kit</span></a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

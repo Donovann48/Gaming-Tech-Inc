@@ -1,0 +1,90 @@
+section.sign-in {
+    display: inline-block;
+    margin: 50px 0 50px 100px;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    /* text-align: center; */
+}
+
+section.sign-in > form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section.sign-in > form > label > input {
+    margin: 15px 5px;
+    width: 220px;
+    color: #fff;
+    font-family: 'audiowideregular';
+    border: groove 2px;
+    font-size: 18px;
+    background-color: rgba(0 ,0 ,0, 0.6);
+
+}
+
+section.sign-in > form > label > input:focus {
+    outline: none;
+}
+
+
+section.sign-in > form > label > select {
+    width: 200px;
+    text-align: center;
+    margin: 15px 5px;
+
+    background-color: rgba(0 ,0 ,0, 0.6);
+    padding: 5px 0;
+    color: #fff;
+    border: groove #fff 2px;
+    /* border-radius: 5px; */
+
+    font-size: 18px;
+}
+
+section.sign-in > form > label > select:focus {
+    outline: none;
+}
+
+section.sign-in > form > label > select > option:first-child {
+    display: none;
+}
+
+
+section.sign-in > form > label > select > option {
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: black;
+}
+
+section.sign-in > form > button {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: rgba(0 ,0 ,0, 0.6);
+    color: #fff;
+    border: groove 2px ;
+    border-radius: 50px;
+    font-size: 20px;
+    text-shadow: -2px -2px 1px #924deb,
+                 -3px -3px 2px #572e8c;
+}
+
+section.sign-in > form > button:hover {
+    background-color: rgba(0 ,0 ,0, 0.8);
+    cursor: pointer;
+}
+
+
+/* Results */
+
+section.sign-in > div#result {
+    display: flex;
+    flex-direction: column;
+}
+
+section.sign-in > div#result > div.person {
+    display: flex;
+    flex-direction: row;
+}
